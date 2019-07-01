@@ -1,8 +1,0 @@
-server:
-  port: 8080
-
-kafka:
-  consumer:
-    bootstrap: hadoop-data-02:9092
-    group: groupTest
-    topic: topicTest
