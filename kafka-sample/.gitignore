@@ -8,3 +8,16 @@ release.properties
 .externalToolBuilders/
 .metadata
 .settings
+
+# IntelliJ
+*.iml
+*.ipr
+*.iws
+.idea/
+out/
+
+# Mac
+.DS_Store
+
+# gitignore
+.gitignore
