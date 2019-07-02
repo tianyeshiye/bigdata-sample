@@ -8,5 +8,6 @@
   	<module>opentsdb-sample</module>
   	<module>spark-sample</module>
   	<module>kafka-sample</module>
+  	<module>opentsdb-monitoring-metrics</module>
   </modules>
 </project>

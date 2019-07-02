@@ -1,4 +1,4 @@
-package org.kafka.sample.producer;
+package sample.tianye.kafka.producer;
 
 import java.util.Properties;
 
@@ -17,7 +17,7 @@ public class SendMessage {
 		}
 	}
 
-	// 同步发送
+	// 同步发�??
 	public void sendMsgSyn() {
 
 		Properties kafkaProps = getProperties();
@@ -28,7 +28,7 @@ public class SendMessage {
 		ProducerRecord<String, String> record = new ProducerRecord<String, String>("topicTest", "Hello",
 				getTestValue());
 		try {
-			// 发送消息，调用get() 方法等待
+			// 发�?�消息，调用get() 方法等待
 			producer.send(record).get();
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -37,7 +37,7 @@ public class SendMessage {
 		}
 	}
 
-	// 异步发送
+	// 异步发�??
 	public void sendMsgAsyn() {
 
 		Properties kafkaProps = getProperties();
@@ -69,9 +69,9 @@ public class SendMessage {
 		// 自定义partitioner
 		// kafkaProps.put("partitioner.class", "com.crrc.MyPartitioner");
 
-		// 消费者群组
+		// 消费者群�?
 		kafkaProps.put("group.id", "groupTest");
-		// 设置序列化
+		// 设置序列�?
 		kafkaProps.put("key.serializer", "org.apache.kafka.common.serialization.StringSerializer");
 		kafkaProps.put("value.serializer", "org.apache.kafka.common.serialization.StringSerializer");
 

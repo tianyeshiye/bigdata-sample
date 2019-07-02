@@ -1,0 +1,17 @@
+influxDB.url=http://172.18.20.14:8086
+influxDB.user=admin
+influxDB.password=admin
+influxDB.database=opentsdbMetrics
+influxDB.table=metrictable
+
+openTSDB.connecttype=HTTP
+
+openTSDB.url=http://172.18.20.15:4242/api/stats
+openTSDB.telnet=172.18.20.14:23
+
+openTSDB.user=admin
+openTSDB.password=admin
+
+metric.interval=1000
+
+metric.list=tsd.connectionmgr.connections,tsd.connectionmgr.connections,tsd.connectionmgr.exceptions,tsd.connectionmgr.exceptions,tsd.connectionmgr.exceptions,tsd.connectionmgr.exceptions,tsd.rpc.received,tsd.rpc.received,tsd.rpc.received,tsd.rpc.exceptions,tsd.http.latency_50pct,tsd.http.latency_75pct,tsd.http.latency_90pct,tsd.http.latency_95pct,tsd.http.latency_50pct,tsd.http.latency_75pct,tsd.http.latency_90pct,tsd.http.latency_95pct,tsd.http.latency_50pct,tsd.http.latency_75pct,tsd.http.latency_90pct,tsd.http.latency_95pct,tsd.http.graph.requests,tsd.http.graph.requests,tsd.http.query.invalid_requests,tsd.http.query.exceptions,tsd.http.query.success,tsd.rpc.received,tsd.rpc.errors,tsd.rpc.errors,tsd.rpc.errors,tsd.rpc.errors,tsd.rpc.errors,tsd.uid.cache-hit,tsd.uid.cache-miss,tsd.uid.cache-size,tsd.uid.ids-used,tsd.uid.ids-available,tsd.uid.random-collisions,tsd.uid.cache-hit,tsd.uid.cache-miss,tsd.uid.cache-size,tsd.uid.ids-used,tsd.uid.ids-available,tsd.uid.cache-hit,tsd.uid.cache-miss,tsd.uid.cache-size,tsd.uid.ids-used,tsd.uid.ids-available,tsd.jvm.ramfree,tsd.jvm.ramused,tsd.hbase.latency_50pct,tsd.hbase.latency_75pct,tsd.hbase.latency_90pct,tsd.hbase.latency_95pct,tsd.hbase.latency_50pct,tsd.hbase.latency_75pct,tsd.hbase.latency_90pct,tsd.hbase.latency_95pct,tsd.hbase.root_lookups,tsd.hbase.meta_lookups,tsd.hbase.meta_lookups,tsd.hbase.rpcs,tsd.hbase.rpcs,tsd.hbase.rpcs,tsd.hbase.rpcs,tsd.hbase.rpcs,tsd.hbase.rpcs,tsd.hbase.rpcs,tsd.hbase.rpcs.batched,tsd.hbase.flushes,tsd.hbase.connections.created,tsd.hbase.nsre,tsd.hbase.nsre.rpcs_delayed,tsd.hbase.region_clients.open,tsd.hbase.region_clients.idle_closed,tsd.compaction.count,tsd.compaction.count,tsd.compaction.duplicates,tsd.compaction.duplicates,tsd.compaction.queue.size,tsd.compaction.errors,tsd.compaction.errors,tsd.compaction.errors,tsd.compaction.writes,tsd.compaction.deletes

@@ -1,4 +1,4 @@
-package org.kafka.sample.producer;
+package sample.tianye.kafka.producer;
 
 /**
  * Hello world!

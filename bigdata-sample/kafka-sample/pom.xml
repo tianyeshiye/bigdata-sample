@@ -9,7 +9,6 @@
 	<artifactId>kafka-sample</artifactId>
 
 
-
 	<dependencies>
 
 
@@ -187,5 +186,5 @@
 			</plugin>
 		</plugins>
 	</build>
-	
+
 </project>
