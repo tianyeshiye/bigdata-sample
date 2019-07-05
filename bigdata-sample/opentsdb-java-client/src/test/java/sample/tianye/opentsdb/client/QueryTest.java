@@ -16,14 +16,16 @@ import java.util.Map;
 public class QueryTest {
     @Test
     public void queryTest() throws IOException {
-        HttpClientImpl client = new HttpClientImpl("http://10.75.201.130:4242");
+        HttpClientImpl client = new HttpClientImpl("http://hadoop-data-01:4242");
 
 
         QueryBuilder builder = QueryBuilder.getInstance();
         SubQueries subQueries = new SubQueries();
         String zimsum = Aggregator.zimsum.toString();
-        subQueries.addMetric("metric_fund").addTag("product", "HQD").addAggregator(zimsum).addDownsample("1s-" +
-                zimsum);
+//        subQueries.addMetric("realtime_train_status").addAggregator(zimsum).addDownsample("1s-" +
+//                zimsum);
+        subQueries.addMetric("realtime_train_status").addAggregator(zimsum).addDownsample("1s-" +
+              zimsum);
         long now = new Date().getTime() / 1000;
         builder.getQuery().addStart(126358720).addEnd(now).addSubQuery(subQueries);
         System.out.println(builder.build());
