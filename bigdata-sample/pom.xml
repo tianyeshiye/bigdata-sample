@@ -12,5 +12,6 @@
   	<module>opentsdb-monitoring-metrics</module>
   	<module>opentsdb-java-client</module>
     <module>postgres-sample</module>
+    <module>Kafka2HBase-Spark</module>
   </modules>
 </project>
