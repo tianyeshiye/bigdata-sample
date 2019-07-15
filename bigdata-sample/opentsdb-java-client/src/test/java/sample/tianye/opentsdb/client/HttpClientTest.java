@@ -10,7 +10,7 @@ public class HttpClientTest {
 
 	@Test
 	public void test_pushMetrics_DefaultRetries() {
-		HttpClientImpl client = new HttpClientImpl("http://10.75.201.130:4242");
+		HttpClientImpl client = new HttpClientImpl("http://localhost:4242");
 
 		MetricBuilder builder = MetricBuilder.getInstance();
 
