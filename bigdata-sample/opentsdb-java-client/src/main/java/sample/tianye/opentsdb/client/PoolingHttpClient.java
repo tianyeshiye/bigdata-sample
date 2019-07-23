@@ -99,8 +99,15 @@ public class PoolingHttpClient {
 
 	public SimpleHttpResponse doPost(String url, String data)
 			throws IOException {
+		
+		RequestConfig config=RequestConfig.custom()
+                .setConnectTimeout(30000) // 设置连接超时时间 3秒钟
+                .setSocketTimeout(30000) // 设置读取超时时间0.01秒钟
+                .build();
+		
 		StringEntity requestEntity = new StringEntity(data);
 		HttpPost postMethod = new HttpPost(url);
+		postMethod.setConfig(config);
 		postMethod.setEntity(requestEntity);
 
 		HttpResponse response = execute(postMethod);
