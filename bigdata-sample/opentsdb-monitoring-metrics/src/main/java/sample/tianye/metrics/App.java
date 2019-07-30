@@ -7,8 +7,8 @@ package sample.tianye.metrics;
 public class App {
 	
 	public static void main(String[] args) {
-
-		MonitorDriver driver = new MonitorDriver("src\\main\\resouces\\config.property");
+		
+		MonitorDriver driver = new MonitorDriver("config.property");
 		driver.call();
 	}
 }

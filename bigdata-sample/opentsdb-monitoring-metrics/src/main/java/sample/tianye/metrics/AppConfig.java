@@ -96,7 +96,9 @@ public class AppConfig {
 	public void initConfig(String path) {
 		Properties prop = new Properties();
 
-		try (InputStream inputStream = new BufferedInputStream(new FileInputStream(path))) {
+		InputStream input = this.getClass().getResourceAsStream('/' + path);
+		
+		try (InputStream inputStream = new BufferedInputStream(input)) {
 
 			prop.load(inputStream);
 
